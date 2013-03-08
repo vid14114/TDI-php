@@ -12,9 +12,11 @@
 	     	  <form class="form-horizontal">
 			<fieldset>
 				<legend>Login</legend>
-				<input type="text" placeholder="Username">
-				<input type="password" placeholder="Password">
-				<button type="submit" class="btn">Login</button>
+				<div class="control-group">
+				  <input type="text" placeholder="Username">
+				  <input type="password" placeholder="Password">
+				  <button type="submit" class="btn">Login</button>
+				</div>
 			</fieldset>
 		  </form>
 	     </div>

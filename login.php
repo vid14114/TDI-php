@@ -6,7 +6,8 @@
 </head>
 
 <body>
-	<div class="row">
+  <div class="container-fluid">
+	<div class="row-fluid">
 	     <div class="span4"></div>
 	     <div class="span4">
 	     	  <form>
@@ -20,5 +21,6 @@
 	     </div>
 	     <div class="span4"></div>
 	</div>
+  </div>
 </body>
 </html>

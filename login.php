@@ -9,14 +9,12 @@
 	<div class="row">
 	     <div class="span4"></div>
 	     <div class="span4">
-	     	  <form class="form-horizontal">
+	     	  <form>
 			<fieldset>
 				<legend>Login</legend>
-				<div class="control-group">
-				  <div class="controls"><input type="text" placeholder="Username"></div>
-				  <div class="controls"><input type="password" placeholder="Password"></div>
-				  <div class="controls"><button type="submit" class="btn">Login</button></div>
-				</div>
+				<input type="text" placeholder="Username">
+				<input type="password" placeholder="Password"><br />
+				<button type="submit" class="btn">Login</button>
 			</fieldset>
 		  </form>
 	     </div>

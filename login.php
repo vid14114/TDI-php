@@ -13,9 +13,9 @@
 			<fieldset>
 				<legend>Login</legend>
 				<div class="control-group">
-				  <input type="text" placeholder="Username">
-				  <input type="password" placeholder="Password">
-				  <button type="submit" class="btn">Login</button>
+				  <div class="controls"><input type="text" placeholder="Username"></div>
+				  <div class="controls"><input type="password" placeholder="Password"></div>
+				  <div class="controls"><button type="submit" class="btn">Login</button></div>
 				</div>
 			</fieldset>
 		  </form>

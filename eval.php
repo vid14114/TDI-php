@@ -16,7 +16,7 @@
 );
 
 	$mdb2 = new MDB2();
-	$mdb2.connect($dsn, $options);
+	$mdb2->connect($dsn, $options);
 	if(PEAR::isError($mdb2)) {
 			//log message
 	}	

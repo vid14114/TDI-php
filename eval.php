@@ -11,8 +11,7 @@
 	     'database' => 'tdi'
 );
 	$options = array(
-		 'debug' => 2,
-		 'portability' => MDB_PORTABILITY_ALL
+		 'debug' => 2
 );
 
 	$mdb2 = MDB2::connect($dsn, $options);

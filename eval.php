@@ -24,7 +24,7 @@
 	if(PEAR::isError($res)) {
 				//log message
 }
-	echo $res;
+	print_r($res);
 
 	$username=$_POST['username'];
 	$passwd=$_POST['password'];

@@ -15,8 +15,7 @@
 		 'portability' => MDB_PORTABILITY_ALL
 );
 
-	$mdb2 = new MDB2;
-	$mdb2->connect($dsn, $options);
+	$mdb2 = new MDB2::connect($dsn, $options);
 	if(PEAR::isError($mdb2)) {
 			die($mdb2->getMessage());
 	}	

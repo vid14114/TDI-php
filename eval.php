@@ -20,6 +20,11 @@
 	if(PEAR::isError($mdb2)) {
 			//log message
 	}	
+	$res = $mdb2->query('SELECT u_id, u_accountname, u_password, u_locked FROM u_users);
+	if(PEAR::isError($res)) {
+				//log message
+}
+	print_r($res);
 
 	$username=$_POST['username'];
 	$passwd=$_POST['password'];

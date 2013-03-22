@@ -24,7 +24,7 @@
 	$username=$_POST['username'];
 	$passwd=$_POST['password'];
 
-    if($username== && $password ==) 
+    if($username== && $password ==)
     {
         $tpl->loadTemplateFile('home.html');
         $tpl->show();

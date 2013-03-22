@@ -15,7 +15,7 @@
 );
 
 	$mdb2 = MDB2::connect($dsn, $options);
-	if(PEAR::isError($mdb2)) {
+	if(PEAR->isError($mdb2)) {
 			die($mdb2->getMessage());
 	}	
 	$res = $mdb2->query('SELECT u_id, u_accountname, u_password, u_locked FROM u_users');

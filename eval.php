@@ -1,5 +1,7 @@
 <?php
 	require_once 'MDB2.php';
+    require_once 'HTML/Template/Sigma.php';
+    $tpl = new HTML_Template_Sigma('.');
 
 	$dsn = array(
 	     'phptype' => 'mysqli',
@@ -22,6 +24,10 @@
 	$username=$_POST['username'];
 	$passwd=$_POST['password'];
 
-	echo $username;
-	echo $passwd;
+    if($username== && $password ==)
+    {
+        $tpl->loadTemplateFile('home.html');
+        $tpl->show();
+    }
+
 ?>

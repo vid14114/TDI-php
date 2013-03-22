@@ -15,10 +15,10 @@
 		 'portability' => MDB_PORTABILITY_ALL
 );
 
-	$mdb2 = new MDB2();
+	$mdb2 = new MDB2;
 	$mdb2->connect($dsn, $options);
 	if(PEAR::isError($mdb2)) {
-			//log message
+			die($mdb2->getMessage());
 	}	
 	$res = $mdb2->query('SELECT u_id, u_accountname, u_password, u_locked FROM u_users');
 	if(PEAR::isError($res)) {

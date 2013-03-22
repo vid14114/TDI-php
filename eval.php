@@ -13,7 +13,7 @@
 		 'portability' => MDB_PORTABILITY_ALL
 );
 
-	$mdb2 =& MDB2::connect($dsn, $options);
+	$mdb2 = MDB2::connect($dsn, $options);
 	if(PEAR::isError($mdb2)) {
 			//log message
 	}	

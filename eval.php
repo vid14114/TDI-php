@@ -14,7 +14,7 @@
         die($mdb2->getMessage());
     }
     
-    $res=mdb2->query('SELECT * FROM u_users');
+    $res =& $mdb2->query('SELECT * FROM u_users');
     if(PEAR::isError($res)) {
         die($res->getMessage());
     }

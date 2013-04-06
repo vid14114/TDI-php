@@ -2,6 +2,7 @@
     require_once 'MDB2.php';
     $username = $_POST['username'];
     $password = $_POST['password'];
+    echo $username." ".$password."\n";
     
     $dsn = array(
         'phptype' => 'mysqli',
@@ -27,6 +28,7 @@
         die($res->getMessage());
     }
     while(($row = $res->fetchRow())) {
+        echo $row[0]." ".$row[1]."\n";
         if($username == $row[0] && $password == $row[1]) {
             echo "Authentication successful";
         }

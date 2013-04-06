@@ -13,6 +13,7 @@
     if(PEAR::isError($mdb2)) {
         die($mdb2->getMessage());
     }
+    echo "asdf";
     
     $res =& $mdb2->query('SELECT * FROM u_users');
     if(PEAR::isError($res)) {

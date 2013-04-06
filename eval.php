@@ -19,7 +19,7 @@
         
     $mdb2 =& MDB2::factory($dsn, $options);
     if(PEAR::isError($mdb2)) {
-        die($mdb2->getMessage()."\n".$mdb2->);
+        die($mdb2->getMessage());
     }
     
     $res =& $mdb2->query('SELECT * FROM u_users');

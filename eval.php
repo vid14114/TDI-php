@@ -6,22 +6,21 @@
     $dsn = array(
         'phptype' => 'mysqli',
         'username' => 'tdi-read',
-        'password' => 'test',
-        'hostspec' => 'vidovic.no-ip.org',
+        'password' => 'read-tdi',
+        'hostspec' => 'localhost',
         'port' => '3336',
         'database' => 'tdi'
     );
     
     $options = array(
-        'debug' => 2,
+        'debug' => 3,
         'result_buffering' => false
         );
         
     $mdb2 =& MDB2::factory($dsn, $options);
     if(PEAR::isError($mdb2)) {
-        die($mdb2->getMessage());
+        die($mdb2->getMessage()."\n".$mdb2->);
     }
-    echo "asdf";
     
     $res =& $mdb2->query('SELECT * FROM u_users');
     if(PEAR::isError($res)) {

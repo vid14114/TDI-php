@@ -3,7 +3,15 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
     
-    $dsn = 'mysqli://tdi-read:read-tdi@vidovic.no-ip.org/tdi';
+    $dsn = array(
+        'phptype' => 'mysqli',
+        'username' => 'tdi-read',
+        'password' => 'test',
+        'hostspec' => 'vidovic.no-ip.org',
+        'port' => '3336',
+        'database' => 'tdi'
+    );
+    
     $options = array(
         'debug' => 2,
         'result_buffering' => false

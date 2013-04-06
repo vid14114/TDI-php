@@ -22,11 +22,14 @@
         die($mdb2->getMessage());
     }
     
-    $res =& $mdb2->query('SELECT * FROM u_users');
+    $res =& $mdb2->query('SELECT u_accountname, u_password FROM u_users');
     if(PEAR::isError($res)) {
         die($res->getMessage());
     }
-    echo $res;
-    
+    while(($row = $res->fetchRow())) {
+        if($username == $row[0] && $password == $row[1]) {
+            echo "Authentication successful";
+        }
+    }
     $mdb2->disconnect();
 ?>

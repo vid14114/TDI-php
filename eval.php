@@ -1,8 +1,8 @@
 <?php
+    session_start();
     require_once 'MDB2.php';
     $username = $_POST['username'];
     $password = $_POST['password'];
-    echo $username." ".$password."\n";
     
     $dsn = array(
         'phptype' => 'mysqli',
@@ -30,7 +30,8 @@
     while(($row = $res->fetchRow())) {
         echo $row[0]." ".$row[1]."\n";
         if($username == $row[0] && $password == $row[1]) {
-            echo "Authentication successful";
+            $_SESSION['user']=$username;
+            header ('Location: index.php');
         }
     }
     $mdb2->disconnect();

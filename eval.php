@@ -30,14 +30,11 @@
     
     $res =& $mdb2->query('SELECT u_accountname, u_password FROM u_users');
     if(PEAR::isError($res)) {
-<<<<<<< HEAD
         die($res->getMessage());ecl
     }
-=======
         $logger->log($res->getMessage(), PEAR_LOG_ERR);
         die($res->getMessage());
    }
->>>>>>> 4d868ef0cea31e26570cb42662a2dc37ac4a5382
     while(($row = $res->fetchRow())) {
         if($username == $row[0] && $password == $row[1]) {
             $_SESSION['user']=$username;

@@ -21,8 +21,8 @@
 
             <div class="controls">
                 <input type="password" name="inputPassword" id="password" onkeydown="onPasswordType()">
-                <div class="progress" style="width: 200px;">
-                </div>
+            </div>
+            <div class="progress" style="width: 200px;">
             </div>
         </div>
         <div class="control-group">
@@ -49,11 +49,9 @@
 </div>
 <div class="span4"></div>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-    <script>
+    <script language="JScript">
         function onPasswordType(){
-            var a;
-            a = $('#password');
-            alert(a)
+            alert($('#password'));
         }
         /*<div class="bar bar-danger" style="width: 35%;">Weak</div>
             <div class="bar bar-warning" style="width: 35%;">Medium</div>

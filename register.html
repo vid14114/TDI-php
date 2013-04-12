@@ -20,11 +20,11 @@
             <label class="control-label">Password</label>
 
             <div class="controls">
-                <input type="password" name="inputPassword">
+                <input type="password" name="inputPassword" onkeydown="onPasswordType()">
                 <div class="progress" style="width: 200px">
-                    <div class="bar bar-danger" style="width: 35%;"></div>
-                    <div class="bar bar-warning" style="width: 35%;"></div>
-                    <div class="bar bar-success" style="width: 30%;"></div>
+                    <div class="bar bar-danger" style="width: 35%;">Weak</div>
+                    <div class="bar bar-warning" style="width: 35%;">Medium</div>
+                    <div class="bar bar-success" style="width: 30%;">Strong</div>
                 </div>
             </div>
         </div>
@@ -52,5 +52,11 @@
 </div>
 <div class="span4"></div>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function onPasswordType(){
+            var a = $("input[name=inputPassword]");
+            alert(a)
+        }
+    </script>
 </body>
 </html>

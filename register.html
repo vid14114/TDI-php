@@ -4,7 +4,6 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <title>TDI-php register</title>
 </head>
-
 <body>
 <!-- INCLUDE navbar.html -->
 <div class="container-fluid">
@@ -12,17 +11,17 @@
         <div class="span4"></div>
         <div class="span4">
             <form class="form-horizontal">
-                <fieldset>
-                    <label class="control-label" for="inputUsername">Username</label>
-                    <input type="text" id="inputUsername">
-                    <label class="control-label" for="inputPassword">Password</label>
-                    <input type="password" id="inputPassword">
-                    <label class="control-label" for="inputPassword2">Retype Password</label>
-                    <input type="password" id="inputPassword2">
-                    <label class="control-label" for="inputEmail">Email</label>
-                    <input type="text" id="inputEmail">
-                    <button type="submit" class="btn">I Wanna Register</button>
-                </fieldset>
+                <div class="control-group">
+                        <label class="control-label">Username</label>
+                        <input type="text" name="inputUsername">
+                        <label class="control-label">Password</label>
+                        <input type="password" name="inputPassword">
+                        <label class="control-label">Retype Password</label>
+                        <input type="password" name="inputPassword2">
+                        <label class="control-label">Email</label>
+                        <input type="text" name="inputEmail">
+                        <button type="submit" class="btn">I Wanna Register</button>
+                </div>
             </form>
         </div>
         <div class="span4"></div>

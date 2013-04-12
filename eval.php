@@ -25,7 +25,7 @@
     
     $res =& $mdb2->query('SELECT u_accountname, u_password FROM u_users');
     if(PEAR::isError($res)) {
-        die($res->getMessage());
+        die($res->getMessage());ecl
     }
     while(($row = $res->fetchRow())) {
         echo $row[0]." ".$row[1]."\n";

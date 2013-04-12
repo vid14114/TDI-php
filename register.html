@@ -7,46 +7,29 @@
 
 <body>
 <!-- INCLUDE navbar.html -->
-<form class="form-horizontal" id="registerHere" method='post' action=''>
-    <fieldset>
+    <form class="form-horizontal">
         <div class="control-group">
-            <label class="control-label">Account Name</label>
+            <label class="control-label" for="inputUsername">Username</label>
             <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
+                <input type="text" id="inputUsername" placeholder="Username">
             </div>
         </div>
-
         <div class="control-group">
-            <label class="control-label">Password</label>
+            <label class="control-label" for="inputPassword">Password</label>
             <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
+                <input type="password" id="inputPassword" placeholder="Password">
             </div>
         </div>
-
         <div class="control-group">
-            <label class="control-label">Password check</label>
+            <label class="control-label" for="inputEmail">Email</label>
             <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
+                <input type="text" id="inputEmail" placeholder="Email">
             </div>
         </div>
-
-        <div class="control-group">
-            <label class="control-label">Email</label>
-            <div class="controls">
-                <input type="text" class="input-xlarge" id="user_email" name="user_email" rel="popover" data-content="What’s your email address?" data-original-title="Email">
-            </div>
+        <div>
+            <button type="submit" class="btn">I Wanna Register</button>
         </div>
-
-        <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-                <button type="submit" class="btn btm-primary">Create Account</button>
-            </div>
-        </div>
-
-    </fieldset>
-</form>
-
+    </form>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

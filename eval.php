@@ -2,7 +2,7 @@
     session_start();
     require_once 'MDB2.php';
     require_once 'Log.php';
-    $logger = Log::singleton('logger', '', 'Log');
+    $logger = Log::singleton('file', 'login.log', 'Log');
     
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -29,10 +29,10 @@
     
     $res =& $mdb2->query('SELECT u_accountname, u_password FROM u_users');
     if(PEAR::isError($res)) {
+        $logger->log($res->getMessage(), PEAR_LOG_ERR);
         die($res->getMessage());
    }
     while(($row = $res->fetchRow())) {
-        echo $row[0]." ".$row[1]."\n";
         if($username == $row[0] && $password == $row[1]) {
             $_SESSION['user']=$username;
             header ('Location: index.php');

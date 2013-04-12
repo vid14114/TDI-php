@@ -3,6 +3,7 @@
     require_once 'MDB2.php';
     require_once 'Log.php';
     $logger = Log::singleton('file', 'login.log', 'Log');
+    ini_set('display_errors', '0'); 
     
     $username = $_POST['username'];
     $password = $_POST['password'];

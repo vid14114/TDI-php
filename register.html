@@ -20,7 +20,7 @@
             <label class="control-label">Password</label>
 
             <div class="controls">
-                <input type="password" name="inputPassword" id="password" onkeydown="onPasswordType()">
+                <input type="password" name="inputPassword" id="password">
             </div>
             <div class="progress" style="width: 200px;">
             </div>
@@ -48,9 +48,12 @@
 </div>
 <div class="span4"></div>
 <script language="javascript" type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js">
-    function onPasswordType(){
-        alert($('#password'));
-    }
+    $(function()
+    {
+        $('input[name=inputPassword]').bind('keydown',function(e){
+            alert('Typed in');
+        });
+    });
     /*<div class="bar bar-danger" style="width: 35%;">Weak</div>
      <div class="bar bar-warning" style="width: 35%;">Medium</div>
      <div class="bar bar-success" style="width: 30%;">Strong</div>

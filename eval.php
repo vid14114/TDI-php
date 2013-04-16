@@ -32,9 +32,7 @@
     if(PEAR::isError($res)) {
         die($res->getMessage());
     }
-        $logger->log($res->getMessage(), PEAR_LOG_ERR);
-        die($res->getMessage());
-   }
+    
     while(($row = $res->fetchRow())) {
         if($username == $row[0] && $password == $row[1]) {
             $_SESSION['user']=$username;

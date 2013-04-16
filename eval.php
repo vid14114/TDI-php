@@ -30,7 +30,7 @@
     
     $res =& $mdb2->query('SELECT u_accountname, u_password FROM u_users');
     if(PEAR::isError($res)) {
-        die($res->getMessage());ecl
+        die($res->getMessage());
     }
         $logger->log($res->getMessage(), PEAR_LOG_ERR);
         die($res->getMessage());

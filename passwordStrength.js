@@ -8,8 +8,9 @@
 
 $(function()
 {
-    $('input[name=inputPassword]').bind('input',function(e){
-        alert('Typed in');
+    var password = $('#password');
+    password.bind('input',function(e){
+        console.log(password.val());
     });
 });
 /*<div class="bar bar-danger" style="width: 35%;">Weak</div>

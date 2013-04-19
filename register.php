@@ -31,7 +31,8 @@
     else
         echo "Succeeded1";
     
-    $sql = "INSERT INTO u_users (u_accountname, u_password, u_email) VALUES ($username, $password, $email)";
+    $sql = 'INSERT INTO u_users (u_accountname, u_password, u_email) VALUES ("$username", "$password", "$email")';
+    
     $result =& $mdb2->exec($sql);
     if(PEAR::isError($result)) {
         $logger->log($result->getMessage(), PEAR_LOG_ERR);

@@ -23,13 +23,15 @@
     $password=$_POST['password'];
     $email=$_POST['email'];
     
+    echo $username." ";
+    echo $password." ";
+    echo $email;
+    
     $mdb2 =& MDB2::factory($dsn, $options);
     if(PEAR::isError($mdb2)) {
         $logger->log($mdb2->getMessage(), PEAR_LOG_ERR);
         die($mdb2->getMessage());
     }
-    else
-        echo "Succeeded1";
     
     $sql = 'INSERT INTO u_users (u_accountname, u_password, u_email) VALUES ("'.$username.'", "'.$password.'", "'.$email.'")';
     
@@ -38,7 +40,5 @@
         $logger->log($result->getMessage(), PEAR_LOG_ERR);
         die($result->getMessage());
     }
-    else
-        echo "Succeeded2";
     
 ?>

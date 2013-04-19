@@ -6,47 +6,22 @@
 </head>
 <body>
 <!-- INCLUDE navbar.html -->
-<div class="span4"></div>
-<div class="span4">
-    <form class="form-horizontal" Method="post">
-        <div class="control-group">
-            <label class="control-label">Username</label>
-
-            <div class="controls">
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span4"></div>
+        <div class="span4">
+            <form class="form-horizontal" Method="post">
                 <input type="text" name="inputUsername">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label">Password</label>
-
-            <div class="controls">
                 <input type="password" name="inputPassword" id="password">
-            </div>
-            <div class="progress" style="width: 200px;">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label">Retype Password</label>
-
-            <div class="controls">
+                <div class="progress" style="width: 200px;"></div>
                 <input type="password" name="inputPassword2">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label">Email</label>
-
-            <div class="controls">
-                <input type="text" name="inputEmail">
-            </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
+                <input type="text" name="inputEmail"><br />
                 <button type="submit" class="btn btn-primary">I Wanna Register</button>
-            </div>
+            </form>
         </div>
-</form>
+        <div class="span4"></div>
+    </div>
 </div>
-<div class="span4"></div>
 <script language="javascript" type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js">
     $(function()
     {

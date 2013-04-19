@@ -28,6 +28,8 @@
         $logger->log($mdb2->getMessage(), PEAR_LOG_ERR);
         die($mdb2->getMessage());
     }
+    else
+        echo "Succeeded1";
     
     $sql = "INSERT INTO u_users (u_accountname, u_password, u_email) VALUES ($username, $password, $email)";
     $result =& $mdb2->exec($sql);
@@ -36,6 +38,6 @@
         die($result->getMessage());
     }
     else
-        echo "Succeeded";
+        echo "Succeeded2";
     
 ?>

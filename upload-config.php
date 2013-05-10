@@ -6,7 +6,7 @@
     
     print_r($_FILES);
     
-    if($_FILES['config-file']['error'] > 0)
+    if($_FILES['config_file']['error'] > 0)
         $logger->log($_FILES['config_file']['error']);
     else
     {

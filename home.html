@@ -14,8 +14,8 @@
                     <h1>Upload icon-configuration</h1>
                     <small>/home/user/.config/xfce4/desktop/icons.screen[...].rc</small>
                 </blockquote>
-                <form class="form-inline" action="upload-config.php" method="post">
-                    <input type="file" placeholder="config-file" name="config-file">
+                <form class="form-inline" action="upload-config.php" method="post" enctype="multipart/form-data">
+                    <input type="file" placeholder="config-file" name="config_file">
                     <button type="submit" class="btn btn-primary">Upload</button>
                 </form>
             </div>

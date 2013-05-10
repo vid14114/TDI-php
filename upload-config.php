@@ -4,7 +4,7 @@
     require_once 'Log.php';
     $logger = Log::singleton('file', 'upload.log', 'Log');
     
-    echo $_FILES['config-file']
+    echo $_FILES['config-file'];
     if($_FILES['config-file']['error'] > 0)
         $logger->log($_FILES['config-file']['error']);
     else

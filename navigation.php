@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'HTML/Template/Sigma.php';
 if(!isset($_SESSION['user']))
     $tpl->loadTemplateFile('login.html');

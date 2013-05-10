@@ -7,8 +7,7 @@ if(!isset($_SESSION['user']))
 else
 {
     $filename = $_GET['filename'];
-    $tpl = new HTML_Template_Sigma('.');
     $tpl->loadTemplateFile($filename.'.html');
-    $tpl->show();
 }
+$tpl->show();
 ?>

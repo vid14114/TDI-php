@@ -8,7 +8,7 @@
         $logger->log($_FILES["file"]["error"]);
     else
     {
-        $config-string = readfile($_FILES["config-file"]["tmp_name"]);
-        echo $config-string;
+        $config_string = readfile($_FILES["config-file"]["tmp_name"]);
+        echo $config_string;
     }
 ?>

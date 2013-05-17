@@ -9,8 +9,12 @@
     else
     {
         $config_string = readfile($_FILES['config_file']['tmp_name']);
-        echo $config_string;
+        echo $config_string.'<br />';
         $arr_conf = explode(' ', $config_string);
-        echo $arr_conf[1];
+        
+        foreach(var $el in $arr_conf)
+        {
+            echo $el.'<br />';
+        }
     }
 ?>

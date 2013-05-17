@@ -4,49 +4,38 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <title>TDI-php register</title>
 </head>
-
 <body>
 <!-- INCLUDE navbar.html -->
-<form class="form-horizontal" id="registerHere" method='post' action=''>
-    <fieldset>
-        <div class="control-group">
-            <label class="control-label">Account Name</label>
-            <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
-            </div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span4"></div>
+        <div class="span4">
+            <form action="register.php" method="post">
+                <fieldset>
+                    <legend>Register</legend>
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div class="progress" style="width: 200px;"></div>
+                    <input type="password" name="password2" placeholder="Retype Password">
+                    <input type="text" name="email" placeholder="e-mail"><br />
+                    <button type="submit" class="btn btn-primary">I Wanna Register</button>
+                </fieldset>
+            </form>
         </div>
-
-        <div class="control-group">
-            <label class="control-label">Password</label>
-            <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label">Password check</label>
-            <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label">Email</label>
-            <div class="controls">
-                <input type="text" class="input-xlarge" id="user_email" name="user_email" rel="popover" data-content="What’s your email address?" data-original-title="Email">
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-                <button type="submit" class="btn btm-primary">Create Account</button>
-            </div>
-        </div>
-
-    </fieldset>
-</form>
-
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <div class="span4"></div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js">
+    $(function()
+    {
+        $('input[name=inputPassword]').bind('keydown',function(e){
+            alert('Typed in');
+        });
+    });
+    /*<div class="bar bar-danger" style="width: 35%;">Weak</div>
+     <div class="bar bar-warning" style="width: 35%;">Medium</div>
+     <div class="bar bar-success" style="width: 30%;">Strong</div>
+     */
+</script>
 </body>
 </html>

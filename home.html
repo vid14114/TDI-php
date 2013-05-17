@@ -6,6 +6,20 @@
 </head>
 
     <body>
-    <!-- INCLUDE navbar.html -->
+    <!-- INCLUDE navbar-user.html -->
+        <div class="row-fluid">
+            <div class="span4"></div>
+            <div class="span4">
+                <blockquote>
+                    <h1>Upload icon-configuration</h1>
+                    <small>/home/user/.config/xfce4/desktop/icons.screen[...].rc</small>
+                </blockquote>
+                <form class="form-inline" action="upload-config.php" method="post" enctype="multipart/form-data">
+                    <input type="file" placeholder="config-file" name="config_file">
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+            <div class="span4"></div>
+        </div>
     </body>
 </html>

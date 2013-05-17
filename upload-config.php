@@ -12,7 +12,7 @@
         echo $config_string.'<br />';
         $arr_conf = explode(' ', $config_string);
         
-        foreach($el in $arr_conf)
+        foreach($el as $arr_conf)
         {
             echo $el.'<br />';
         }

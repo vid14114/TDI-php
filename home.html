@@ -15,6 +15,7 @@
                     <small>/home/user/.config/xfce4/desktop/icons.screen[...].rc</small>
                 </blockquote>
                 <form class="form-inline" action="upload-config.php" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
                     <input type="file" placeholder="config-file" name="config_file">
                     <button type="submit" class="btn btn-primary">Upload</button>
                 </form>

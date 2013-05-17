@@ -10,5 +10,7 @@
     {
         $config_string = readfile($_FILES['config_file']['tmp_name']);
         echo $config_string;
+        $arr_conf = explode(' ', $config_string);
+        echo $arr_conf[1];
     }
 ?>

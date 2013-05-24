@@ -12,10 +12,8 @@
         $config_string = readfile($_FILES['config_file']['tmp_name']);
         echo $config_string.'<br />';
         $arr_conf = explode(' ', $config_string);
+        $conf = str_replace($_FILES['config_file']['size'], '', $config_string);
         
-        foreach($arr_conf as $el)
-        {
-            echo $el.'<br />';
-       } 
+        echo $conf;
     }
 ?>

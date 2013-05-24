@@ -2,6 +2,7 @@
     session_start();
     require_once 'MDB2.php';
     require_once 'Log.php';
+    ini_set('auto_detect_line_endings',true);
     $logger = Log::singleton('file', 'upload.log', 'Log');
     
     if($_FILES['config_file']['error'] > 0)
@@ -15,6 +16,6 @@
         foreach($arr_conf as $el)
         {
             echo $el.'<br />';
-        }
+       } 
     }
 ?>

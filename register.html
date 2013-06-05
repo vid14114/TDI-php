@@ -15,7 +15,11 @@
                     <legend>Register</legend>
                     <input type="text" name="username" placeholder="Username">
                     <input type="password" name="password" id="password" placeholder="Password">
-                    <div class="progress" style="width: 200px;"></div>
+                    <div class="progress" style="width: 220px;">
+                        <div class="bar bar-danger hidden" style="width: 35%;">Weak</div>
+                        <div class="bar bar-warning hidden" style="width: 35%;">Medium</div>
+                        <div class="bar bar-success hidden" style="width: 30%;">Success</div>
+                    </div>
                     <input type="password" name="password2" placeholder="Retype Password">
                     <input type="text" name="email" placeholder="e-mail"><br />
                     <button type="submit" class="btn btn-primary">I Wanna Register</button>
@@ -25,17 +29,6 @@
         <div class="span4"></div>
     </div>
 </div>
-<script language="javascript" type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js">
-    $(function()
-    {
-        $('input[name=inputPassword]').bind('keydown',function(e){
-            alert('Typed in');
-        });
-    });
-    /*<div class="bar bar-danger" style="width: 35%;">Weak</div>
-     <div class="bar bar-warning" style="width: 35%;">Medium</div>
-     <div class="bar bar-success" style="width: 30%;">Strong</div>
-     */
-</script>
+<script language="javascript" type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"/>
 </body>
 </html>

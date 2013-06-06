@@ -1,9 +1,7 @@
 /**
- * Created with JetBrains PhpStorm.
- * User: abideen
+ * User: Abideen
  * Date: 19/04/13
  * Time: 10:59
- * To change this template use File | Settings | File Templates.
  */
 
 $(function()

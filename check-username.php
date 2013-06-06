@@ -33,7 +33,7 @@
     
     while (($row = $res->fetchRow()))
     {
-        if($row == $username)
+        if($row[0] == $username)
         {
             echo 1;
             exit();

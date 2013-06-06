@@ -26,7 +26,7 @@
         die($mdb2->getMessage());
     }
     
-    $res =& $mdb2->query('SELECT u_accountname FROM u_users WHERE u_accountname = '.$username);
+    $res =& $mdb2->query('SELECT u_accountname FROM u_users WHERE u_accountname = "'.$username.'"');
     if(PEAR::isError($res)) {
         die($res->getMessage());
     }

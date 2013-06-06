@@ -40,4 +40,5 @@
         }
     }
     echo 0;
+    $mdb2->disconnect();
 ?>

@@ -9,7 +9,7 @@
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span4"></div>
-        <div class="span4">
+        <div class="span3">
             <form action="register.php" method="post">
                 <fieldset>
                     <legend>Register</legend>
@@ -21,12 +21,13 @@
                         <div class="bar bar-success hidden" style="width: 30%;">Success</div>
                     </div>
                     <input type="password" name="password2" placeholder="Retype Password">
-                    <input type="text" name="email" placeholder="E-Mail"><br />
+                    <input type="text" name="email" placeholder="e-mail"><br />
                     <button type="submit" class="btn btn-primary">I Wanna Register</button>
                 </fieldset>
             </form>
         </div>
-        <div class="span4">
+        <div class="span2">
+        <h1>Requirements</h1>
             <table class="table table-hover">
                 <tr><td>Valid Username</td></tr>
                 <tr><td>Password has a length of at least 8 characters</td></tr>
@@ -35,9 +36,10 @@
             </table>
         </div>
     </div>
+    <div class="span3"></div>
 </div>
 <script language="javascript" type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"> </script>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script language="javascript" type="text/javascript" src="registerCheck.js"> </script>
+<script language="javascript" type="text/javascript" src="passwordStrength.js"> </script>
 </body>
 </html>

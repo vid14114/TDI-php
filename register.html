@@ -13,26 +13,27 @@
             <form action="register.php" method="post">
                 <fieldset>
                     <legend>Register</legend>
-                    <input type="text" name="username" placeholder="Username">
-                    <input type="password" name="password" id="password" placeholder="Password">
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="password" id="password" placeholder="Password">
                     <div class="progress" style="width: 220px;">
                         <div class="bar bar-danger hidden" style="width: 35%;">Weak</div>
                         <div class="bar bar-warning hidden" style="width: 35%;">Medium</div>
                         <div class="bar bar-success hidden" style="width: 30%;">Success</div>
                     </div>
-                    <input type="password" name="password2" placeholder="Retype Password">
-                    <input type="text" name="email" placeholder="e-mail"><br />
+                    <input type="password" id="password2" placeholder="Retype Password">
+                    <input type="text" id="email" placeholder="e-mail"><br />
                     <button type="submit" class="btn btn-primary">I Wanna Register</button>
                 </fieldset>
             </form>
         </div>
         <div class="span2">
-        <h3>Requirements</h3>
+            <h3>Requirements</h3>
             <table class="table table-hover">
-                <tr><td>Valid Username</td></tr>
-                <tr><td>Password has a length of at least 8 characters</td></tr>
-                <tr><td>Password contains at least 1 special character or number</td></tr>
-                <tr><td>Valid E-Mail address</td></tr>
+                <tr><td>Valid Username <i id="userCheck" class="checker"></i></td></tr>
+                <tr><td>Password has a length of at least 8 characters <i id="passCheck" class="checker"></i></td></tr>
+                <tr><td>Password contains at least 1 special character or number <i id="passCheck2" class="checker"></i></td></tr>
+                <tr><td>The Retype password matches your original password <i id="passCheck3" class="checker"></i></td> </tr>
+                <tr><td>Valid E-Mail address <i id="emailCheck" class="checker"></i></td></tr>
             </table>
         </div>
     </div>

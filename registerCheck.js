@@ -4,8 +4,7 @@
  * Time: 10:59
  */
 
-$(function()
-{
+$(function(){
     var password = $('#password');
     password.bind('input',function(e){
         //Also in this method, we need to check whether both passwords match, because the button is still checked even though the user changed the password and they didn't match
